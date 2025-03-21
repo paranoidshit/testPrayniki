@@ -8,6 +8,7 @@ import svgr from 'vite-plugin-svgr';
 
 export default defineConfig({
   plugins: [react(), eslint(), tsconfigPaths(), svgr()],
+  base: '/testPryanik/',
   build: {
     modulePreload: false,
     target: 'esnext',
